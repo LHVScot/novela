@@ -41,7 +41,7 @@ int main()
                 }
                 else
                 {
-                    cout << "You don't take the medallion and you get struck by lightning, the wizards have punished you, sucker" << endl;
+                    cout << "You don't take the medallion and you get struck by lightning, the wizards have punished you, sucker" << endl; //ты умер
                 }
             }
 
@@ -51,7 +51,7 @@ int main()
         }
         else
         {
-            cout << "here you are practicing and suddenly you are transported to the forest, when you started moving through it you met a monster, but you did not have enough strength to cope with it - you died" << endl;
+            cout << "here you are practicing and suddenly you are transported to the forest, when you started moving through it you met a monster, but you did not have enough strength to cope with it - you died" << endl; //ты умер
         }
     }
     else
