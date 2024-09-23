@@ -6,8 +6,9 @@ using namespace std;
 int main()
 {
     setlocale(LC_ALL, "Ru");
+    // чародеи каэр морхена крадут ребенка и пытаются сделать из него ведьмака, на пути тебя ждет исптыание травами и добыча медальона
     string a, b, c, d, e;
-    cout << "What's your name, child?";
+    cout << "What's your name, child? "<< endl;
     cin >> e;
     cout << "You were captured by wizards and taken to Caer Morhen!"<< endl;
     cout << "your task is to survive and become a witcher, all your actions affect this!" << endl;
@@ -15,19 +16,19 @@ int main()
     cout << "They put you on a 'torture chair' and begin injecting you." << endl;
     cout << "you feel hellish pain and at some point the pain subsides, you start to hear a voice that says 'come to me'.\nWill you respond to this call ? " << endl;
     cin >> a;
-    if (a == "no" || a == "No")
+    if (a == "no" || a == "No") // ты теряешь сознание и слышишь голос, пойдешь ли ты на голос?
     {
         cout << "you start to feel pain again, you open your eyes and the world in front of you changes - you have passed the test of herbs" << endl;
         cout << "but it's too early to relax, because more than half of the children died on this test, but you don't feel anything anymore." << endl;
-        cout << "The wizards of Kaer Morhen announced the beginning of the break do you want to rest?" << endl;
+        cout << "The wizards of Kaer Morhen announced the beginning of the break do you want to rest?" << endl; //чародеи обьявили перерыв - хочешь ли ты отдохнуть?
         cin >> b;
         if (b == "yes" || b =="Yes")
         {
             cout << "here you are sleeping and you wake up abruptly from falling to the ground, you open your eyes and lead the forest in front of you." << endl;
             cout << "when you start to make your way through the forest, do you see a monster in front of you, will you fight with it or run away?"<< endl;
-            cin >> c;
+            cin >> c;//ты встретил монстра будешь драться или побежишь?
             if (c == "run") {
-                cout << "you start to run away, but the monster turned out to be faster - you died" << endl;
+                cout << "you start to run away, but the monster turned out to be faster - you died" << endl; //ты умер
             }
             else if(c == "fight")
             {
@@ -35,7 +36,7 @@ int main()
                 cout << "wandering through the forest, you also met monsters, but you already know that they are not your equal and you easily defeat them all!" << endl;
                 cout << "soon, wandering through the forest, you find a stone, there is a wolf medallion on it, do you want to take it?" << endl;
                 cin >> d;
-                if (d == "yes") {
+                if (d == "yes") {//ты находишь медальон хочешь ты его взять?
                     cout << "when you take the medallion, you are moved to Kaer Morhen and the wizards praise and congratulate you - you have become a witcher, "<< e<< endl;
                 }
                 else
@@ -45,7 +46,7 @@ int main()
             }
 
             else {
-                cout << "Did you think it was that simple? You're dead you fool";
+                cout << "Did you think it was that simple? You're dead you fool";// ты умер
             }
         }
         else
@@ -55,7 +56,7 @@ int main()
     }
     else
     {
-        cout << "YOU DIE!" << endl;
+        cout << "YOU DIE!" << endl; //ты умер
     }
     return 0;
 }
